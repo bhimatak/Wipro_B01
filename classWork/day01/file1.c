@@ -4,7 +4,7 @@ file to demo on arithmatic operators
 
 #include <stdio.h>
 
-void main()
+int main()
 {
 	int var1=100, var2=20;
 
@@ -20,9 +20,11 @@ void main()
 	result = var1 / var2;
 	printf("\ndiv of two number=%d",result);
 	//modulus operator
-	result = var1%var2;
+	result = 3%5;
 	printf("\nModulus of var1 mod var2= %d",result);
 
 	printf("\n\n");
+
+	return 0;
 
 }
