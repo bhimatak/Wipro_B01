@@ -34,7 +34,7 @@ int main()
 
 	printf("\nres=%d\n",res);
 
-	printf("\n%d\n",func(++res));
+	printf("\n%d\n",sizeof(++res));
 
 	printf("\nres = %d\n",res);
 	return 0;
