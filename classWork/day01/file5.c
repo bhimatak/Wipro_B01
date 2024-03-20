@@ -7,11 +7,16 @@ demo on bitwise operators
 
 int main()
 {
-	short int val1=5;
-	short int val2 = 10;
-	long long int res=0;
+	int val1=2;
+	int val2 = 1;
+	int res=0;
 
-	res = val1 & val2;
+	res = val1 * val2;
+	val2++
+	res = val1 * val2;
+	val2++
+	res = val1 * val2;
+	
 
 	/*
 	val = 5, 0101
