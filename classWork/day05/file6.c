@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int dispList(int [], int);
-int sortDesc(int [], int);
+void dispList(int [], int);
+void sortDesc(int [], int);
 
 
 int main()
@@ -11,14 +11,33 @@ int main()
     printf("\nBefore Sort\n");
     dispList(arr,Size);
     sortDesc(arr,Size);
-    printf("\nAfter Sort");
+    printf("\nAfter Sort\n");
     dispList(arr, Size);
-    printf("\n%d",arr[3]);
+    // printf("\n%d",arr[3]);
     printf("\n\n");
     return 0;
 }
 
-int dispList(int a[], int n)
+void sortDesc(int a[], int n)
+{
+    int i,j;
+    int temp;
+
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(a[j]<a[j+1])
+            {
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+            }
+        }
+    }
+}
+
+void dispList(int a[], int n)
 {
     int i;
     for(i=0;i<n;i++)
