@@ -1,3 +1,7 @@
+Note: please create the dirctory for obj
+proj01>$mkdir obj
+
+
 to clean the dirctory/files
 
 proj01>$make -f script/Makefile clean
