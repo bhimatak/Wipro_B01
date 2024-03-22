@@ -20,7 +20,7 @@ int main()
 
 int demoRecur(int i)
 {
-    int retR=0;
+    int retR;
     printf("\ni=%d",i);
     if (i==10){
         // return 201;
