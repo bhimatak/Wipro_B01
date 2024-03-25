@@ -34,7 +34,8 @@ int main()
     printf("\nBA or zeroth address of ptr/array=%u\n",&temp[0]);
     for(i=0;i<5;i++)
         printf("\n%d",ptr[i]);
-
+    ptr = temp;
+    free(ptr);
     printf("\n\n");
     return 0;
 }
