@@ -34,7 +34,8 @@ printf("%ld",*ptr);
 int main()
 {
     int a[10];
-    int *ptr = a;
+    int *ptr = NULL;
+    ptr = a;
 
     int i;
     /*
