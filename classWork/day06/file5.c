@@ -10,7 +10,8 @@ void disp1(int *, int);
 int main()
 {
     int *arr = NULL, *temp=NULL;
-    int Size,i;// = sizeof(arr)/sizeof(arr[0]);
+    int Size;
+    register int i;// = sizeof(arr)/sizeof(arr[0]);
     printf("\nEnter the size of the list: ");
     scanf("%d",&Size);
     arr = (int *)malloc(sizeof(int)*Size);
